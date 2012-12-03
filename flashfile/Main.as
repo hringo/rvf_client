@@ -12,6 +12,7 @@ package
 	
 	public class Main extends MovieClip
 	{
+		//tieten
 		private var client:Client;
 		private var startWindow:WinStart;
 		private var spelWindow:WinSpelen;
