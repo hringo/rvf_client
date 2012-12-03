@@ -18,6 +18,7 @@ package
 		
 		
 		//preute leute
+		//dubbele fun
 		public function Main()
 		{
 			stage.addEventListener(KeyboardEvent.KEY_DOWN, KeyboardHandler);
