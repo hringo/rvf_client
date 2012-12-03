@@ -3,6 +3,8 @@ package
 	import flash.desktop.NativeApplication;
 	import flash.display.MovieClip;
 	import flash.events.KeyboardEvent;
+	import flash.events.MouseEvent;
+	import flash.events.TouchEvent;
 	import flash.sampler.NewObjectSample;
 	import flash.ui.Keyboard;
 	
@@ -25,9 +27,16 @@ package
 			stage.addChild(startWindow);
 			
 			spelWindow=new WinSpelen();
-			
+			spelWindow.x=854;
+			stage.addChild(spelWindow);
 			accountWindow=new WinInschrijven();
-			
+		
+			startWindow.btnSpelen.addEventListener(MouseEvent.CLICK,btnSpelenClick);
+		}
+		
+		private function btnSpelenClick():void
+		{
+			spelWindow.x=0;
 		}
 		
 		protected function KeyboardHandler(evt:KeyboardEvent) {
