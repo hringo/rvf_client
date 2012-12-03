@@ -17,7 +17,7 @@ package
 		//deru
 		
 		
-		//preut
+		//preute leute
 		public function Main()
 		{
 			stage.addEventListener(KeyboardEvent.KEY_DOWN, KeyboardHandler);
