@@ -14,6 +14,7 @@ package
 		private var st:WinStart;
 		private var sc:ServerConnecter;
 		//matthias
+		//deru
 		public function Main()
 		{
 			stage.addEventListener(KeyboardEvent.KEY_DOWN, KeyboardHandler);
