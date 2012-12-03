@@ -11,17 +11,23 @@ package
 	public class Main extends MovieClip
 	{
 		private var client:Client;
-		private var st:WinStart;
+		private var startWindow:WinStart;
+		private var spelWindow:WinSpelen;
 		private var sc:ServerConnecter;
-		
+		private var accountWindow:WinInschrijven;
 		public function Main()
 		{
 			stage.addEventListener(KeyboardEvent.KEY_DOWN, KeyboardHandler);
 			
 			client = new Client();
 			
-			st = new WinStart(client);
-			stage.addChild(st);
+			startWindow = new WinStart(client);
+			stage.addChild(startWindow);
+			
+			spelWindow=new WinSpelen();
+			
+			accountWindow=new WinInschrijven();
+			
 		}
 		
 		protected function KeyboardHandler(evt:KeyboardEvent) {
